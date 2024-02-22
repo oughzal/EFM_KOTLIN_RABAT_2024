@@ -14,13 +14,13 @@ fun main(){
     print("Donner le jour : ")
     val j :String? = readLine()!!
 
-/*    try {
+ try {
         var jour: Jour? = Jour.valueOf(j?.uppercase() ?: "")
         println("c'est $jour")
     }
     catch (e:Exception){
        println("erreur, ce n'est pas une jour de la semaine")
-    }*/
+    }
 
     var jour: Jour? = when(j!!.uppercase()){
     "LUNDI" -> Jour.LUNDI
